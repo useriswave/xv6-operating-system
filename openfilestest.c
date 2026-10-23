@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 
         if (fd < 0) {
             printf(1, "Cannot open more files than the max limit of 16.\n");
-            argc = i;
+            n_files_to_open = i;
             break;
         }
     }

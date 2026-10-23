@@ -11,10 +11,11 @@ int main(int argc, char* argv[])
 
     int n_files_to_open = atoi(argv[1]);
     for (int i = 0; i < n_files_to_open; ++i) {
-        int fd = open("README.md", O_RDONLY);
+        int fd = open("README", O_RDONLY);
 
         if (fd < 0) {
             printf(1, "Cannot open more files than the max limit of 16.\n");
+            argc = i;
             break;
         }
     }

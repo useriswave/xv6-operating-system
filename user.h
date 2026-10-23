@@ -14,6 +14,7 @@ int kill(int);
 int exec(char*, char**);
 int open(const char*, int);
 int getfilenum(int);
+int getreadcount(void);
 int mknod(const char*, short, short);
 int unlink(const char*);
 int fstat(int fd, struct stat*);

@@ -175,6 +175,7 @@ UPROGS=\
 	_hello\
 	_getfilenumtest\
 	_openfilestest\
+	_readcounttest\
 	_kill\
 	_ln\
 	_ls\
